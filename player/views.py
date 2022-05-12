@@ -9,3 +9,12 @@ class PlayerViewSet(viewsets.ModelViewSet):
     """
     serializer_class = PlayerSerializer
     queryset = Player.objects.all()
+
+
+class PlayerWalletViewSet(viewsets.ModelViewSet):
+    """
+    A viewset for viewing and editing Player instances.
+    """
+    lookup_field = 'wallet_address'
+    serializer_class = PlayerSerializer
+    queryset = Player.objects.all()
