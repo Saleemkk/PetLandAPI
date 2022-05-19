@@ -1,6 +1,9 @@
 from django.contrib import admin
-from .models import Player, HairModel
+from .models import Land, Pet, Player
 
 
 admin.site.register(Player)
-admin.site.register(HairModel)
+
+admin.site.register(Pet)
+
+admin.site.register(Land)
